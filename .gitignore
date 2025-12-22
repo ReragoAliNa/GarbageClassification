@@ -1,0 +1,16 @@
+# 忽略海量数据集文件夹
+data/
+
+# 忽略训练日志和缓存
+logs/
+__pycache__/
+*.pyc
+
+# 忽略大型权重文件（建议通过 Releases 上传，不要直接推送到仓库）
+checkpoints/
+*.pth
+
+# 忽略虚拟环境或 IDE 配置
+.venv/
+.vscode/
+.idea/

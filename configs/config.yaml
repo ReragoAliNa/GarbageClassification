@@ -1,0 +1,22 @@
+# 路径配置
+data_root: "data"
+train_dir: "data/train"
+val_dir: "data/val"
+checkpoint_dir: "checkpoints"
+log_dir: "logs"
+
+# 训练超参数
+image_size: 224
+batch_size: 64
+num_workers: 8
+num_classes: 20
+epochs: 10
+learning_rate_base: 1e-3
+learning_rate_freeze: 1e-5
+weight_decay: 1e-4
+
+
+# 模型配置
+pretrained: True
+freeze_layers: 100
+dropout_rate: 0.5
