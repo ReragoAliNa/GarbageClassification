@@ -67,6 +67,8 @@ python evaluate.py
 python predict.py
 ```
 
+---
+
 ## 如何查看监控看板？
 **启动服务**：在项目根目录下打开终端，输入：
 ```Bash
