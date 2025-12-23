@@ -52,7 +52,6 @@ def predict(image_path, model_path, config_path):
     print("-" * 30)
 
 if __name__ == "__main__":
-    # 建议先从测试集里找一张图来测
     predict(r"E:\GarbageClassification\data\test\西红柿\b0b3836b05d5_1156.jpg", 
             "checkpoints/garbage_classifier_best.pth", 
             "configs/config.yaml")
