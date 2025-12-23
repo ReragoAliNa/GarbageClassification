@@ -57,8 +57,7 @@ def predict_top_k(image_path, model_path, config_path, k=5):
     top_indices = top_indices.cpu().numpy()[0]
 
     # 映射名称
-    top_names = [ID_TO_CHINESE.get(folder_names[idx], f"未知({folder_names[idx]})") for idx in top_indices]
-
+    top_names = [folder_names[idx] for idx in top_indices]
     # --- 可视化：左图右表 ---
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15, 6))
     
